@@ -190,19 +190,6 @@
         <activity android:name=".activities.NovelActivity" />
         <activity android:name=".jetpack.NavActivity" />
 
-        <receiver
-            android:name=".notification.RecommendAppWidgetProvider"
-            android:exported="false"
-            android:label="@string/recommend_illust">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/recommend_appwidget_provider_info" />
-        </receiver>
-
         <service
             android:name=".notification.RecommendAppWidgetProvider$RecommendAppWidgetService"
             android:exported="false"

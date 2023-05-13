@@ -135,8 +135,6 @@ public class Shaft extends Application implements ServicesProvider {
             });
         }
 
-        ShortcutHelper.addAppShortcuts();
-
         appViewModel = new AppLevelViewModel(this);
     }
 

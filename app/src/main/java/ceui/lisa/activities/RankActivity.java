@@ -36,7 +36,7 @@ public class RankActivity extends BaseActivity<ActivityMultiViewPagerBinding> im
     protected void initView() {
         setSupportActionBar(baseBind.toolbar);
         baseBind.toolbar.setNavigationOnClickListener(v -> finish());
-        baseBind.toolbarTitle.setText("排行榜");
+        baseBind.toolbarTitle.setText(mContext.getString(R.string.ranking_illust));
         dataType = getIntent().getStringExtra("dataType");
         queryDate = getIntent().getStringExtra("date");
         baseBind.viewPager.setPageTransformer(true, new DrawerTransformer());
@@ -53,7 +53,9 @@ public class RankActivity extends BaseActivity<ActivityMultiViewPagerBinding> im
                 mContext.getString(R.string.r_eighteen),
                 mContext.getString(R.string.r_eighteen_weekly_rank),
                 mContext.getString(R.string.r_eighteen_male_rank),
-                mContext.getString(R.string.r_eighteen_female_rank)
+                mContext.getString(R.string.r_eighteen_female_rank),
+                mContext.getString(R.string.r_eighteen_ai_rank),
+                mContext.getString(R.string.r_eighteen_guro_rank)
         };
 
         final String[] CHINESE_TITLES_MANGA = new String[]{
